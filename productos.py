@@ -38,7 +38,7 @@ def MainMenu():
             "valorVenta":float(input("Ingrese el valor de venta :")),
             "estado":True
         }
-
+        diccProducto["data"].append(data)
         core.crearInfo("productos.json",data)
         
     elif (opcion == 2):

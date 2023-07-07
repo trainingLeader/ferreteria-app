@@ -33,7 +33,7 @@ def MainMenu():
             "nombre":input("Ingrese el Nombre del cliente :"),
             "email":input("Ingrese el Email del cliente :"),
         }
-
+        diccProveedor["data"].append(data)
         core.crearInfo("proveedores.json",data)
         
     elif (opcion == 2):
